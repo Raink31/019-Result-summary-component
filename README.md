@@ -19,8 +19,8 @@ Your challenge is to build out this page and get it looking as close to the desi
 
 ## Links
 
-- Solution URL: --
-- Live Site URL: --
+- Solution URL: https://www.frontendmentor.io/solutions/results-summary-component-responsive-solution-eQPDIef5vB
+- Live Site URL: https://raink31.github.io/019-Result-summary-component/
 
 
 ## Built with
