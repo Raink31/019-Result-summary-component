@@ -1,0 +1,265 @@
+/* RESETS */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    display: block;
+}
+
+/* Style guide roots */
+
+:root{
+    --light-red: hsl(0, 100%, 67%);
+    --orangey-yellow: hsl(39, 100%, 56%);
+    --green-teal: hsl(166, 100%, 37%);
+    --cobalt-blue: hsl(234, 85%, 45%);
+    --very-pale-blue: hsl(207, 100%, 98%);
+    --light-slate-blue: hsl(252, 100%, 67%);
+    --light-royal-blue: hsl(241, 81%, 54%);
+    --violet-blue: hsla(256, 72%, 46%, 1);
+    --persian-blue: hsla(241, 72%, 46%, 0);
+    --pale-blue: hsl(221, 100%, 96%);
+    --light-lavender: hsl(241, 100%, 89%);
+    --dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+/* CSS Style guide */
+
+html, body{
+    overflow-x: hidden;
+}
+
+body {
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    min-height: 100vh;
+    max-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+}
+
+main, 
+header, 
+footer {
+    max-width: 767.99px;
+    width: 100%;
+}
+
+/* Score section */
+
+.score{
+    background: linear-gradient(180deg, var(--light-slate-blue), var(--light-royal-blue));
+    color: white;
+    border-radius: 0 0 30px 30px;
+    padding-top: 1.5rem;
+    padding-bottom: 2.5rem;
+}
+
+.score h1{
+    opacity: 70%;
+    font-size: 1em;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+
+#of100 {
+    font-size: .9em;
+    opacity: 70%;
+}
+
+.exact-score strong{
+    font-size: 3.2em;
+}
+
+.exact-score{
+    background: linear-gradient(180deg, var(--violet-blue), var(--persian-blue));
+    height: max-content;
+    width: max-content;
+    margin: auto;
+    padding: 1.2rem 2.2rem;
+    border-radius: 100px;
+    margin-bottom: 1.5rem;
+}
+
+.score h2{
+    font-weight: 700;
+    font-size: 1.5em;
+    margin-bottom: 1rem;
+}
+
+#score-description{
+    display: inline-block;
+    opacity: 70%;
+    font-size: .9em;
+    width: 80%;
+}
+
+/* Result section */
+
+.result{
+    padding-top: 1.5rem;
+    text-align: left;
+    margin: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.result h2{
+    font-size: .9em;
+    margin-bottom: .5rem;
+}
+
+.details, 
+.category{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.category{
+    gap: .7rem;
+}
+
+#reaction{
+    background-color: #fff6f5;
+}
+
+#reaction h3{
+    color: var(--light-red);
+}
+
+#memory{
+    background-color: #fffbf2;
+}
+
+#memory h3{
+    color: var(--orangey-yellow);
+}
+
+#verbal{
+    background-color: #f2fafa;
+}
+
+#verbal h3{
+    color: var(--green-teal);
+}
+
+#visual{
+    background-color: #f3f3fd;
+}
+
+#visual h3{
+    color: var(--cobalt-blue);
+}
+
+.details h3{
+    font-size: .8em;
+}
+
+.details span{
+    opacity: 70%;
+}
+
+.details p{
+    font-size: .85em;
+}
+
+.details{
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.result a{
+    margin-top: .5rem;
+    text-align: center;
+    text-decoration: none;
+    background: var(--dark-gray-blue);
+    color: white;
+    padding: 1rem 5rem;
+    border-radius: 100px;
+}
+
+.result a:hover{
+    background: linear-gradient(180deg, var(--light-slate-blue), var(--light-royal-blue));
+}
+
+.attribution{
+    font-size: 0.7em;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.attribution a{
+    color: #312dea;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+    body{
+        justify-content: center;
+    }
+
+    main{
+        display: flex;
+        box-shadow: 0 5px 10px rgba(95, 90, 165, 0.349);
+        border-radius: 30px;
+        overflow: hidden;
+        max-width: 650px;
+    }
+
+    .score{
+        border-radius: 30px;
+        flex: 50%;
+    }
+
+    .result{
+        flex: 50%;
+        margin: 0;
+        padding: 2rem;
+    }
+    
+    .exact-score{
+    margin: auto;
+    padding: 2.4rem 3.6rem;
+    border-radius: 100px;
+    margin-bottom: 2rem;
+    }
+
+    #score-description{
+    font-size: .85em;
+    width: 70%;
+    }
+
+    .result{
+    gap: .3rem;
+    }
+
+    .result a{
+    margin-top: 1rem;
+    text-align: center;
+    text-decoration: none;
+    background: var(--dark-gray-blue);
+    color: white;
+    padding: 0.8rem 5rem;
+    border-radius: 100px;
+    }
+}
+
+
+
+
+
+
+
+
+
